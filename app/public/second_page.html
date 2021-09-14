@@ -62,7 +62,7 @@
     
 <h2>The Books</h2>
 
-<table>
+<table id="taskTable">
   <tr>
     <th>Title</th>
     <th>Author</th>
@@ -190,10 +190,19 @@
 
       <br>
     
-    
+  <script src="js/tablesort.min.js"></script>
+  <script>
+    new Tablesort(document.getElementById('taskTable'));
+  </script>
+
+
+
+
       <p><q>I like turtles</q> - Kid</p>       
   <hr>
     
+
+
     <footer>
         Green Team
         </footer>
