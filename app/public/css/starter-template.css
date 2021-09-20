@@ -10906,7 +10906,7 @@ textarea.form-control-lg {
      
               
   h1 {
-      border:2px solid black;
+      border:2px solid rgb(22, 110, 84);
   font-family: fantasy;
   padding: 15px;
   font-weight: bold;
@@ -10920,7 +10920,7 @@ textarea.form-control-lg {
   font-family: serif;
   padding: 15px;
   text-decoration: none;
-  color: black;
+  color: rgb(52, 136, 26);
   }
   
   footer {
@@ -10935,15 +10935,15 @@ textarea.form-control-lg {
   a {
   font-family: sans-serif;
   text-decoration: none;
-  color: greenyellow;
-  background-color: black;
+  color: rgb(255, 0, 0);
+  background-color: rgb(174, 247, 40);
   padding: 10px;
   }
   
   
   
   po {
-      border:2px solid black;
+      border:2px solid rgba(11, 80, 11, 0.438);
       font-family: monospace;
       padding: 15px;
   }
