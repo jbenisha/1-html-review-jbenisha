@@ -48,7 +48,7 @@ color: green;
 a {
 font-family: sans-serif;
 text-decoration: none;
-color: white;
+color: greenyellow;
 background-color: black;
 padding: 10px;
 }
@@ -87,3 +87,4 @@ input, textarea, select {
 .button:hover {
     background-color: antiquewhite;
 }
+
