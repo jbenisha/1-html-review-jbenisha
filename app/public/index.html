@@ -45,6 +45,28 @@
   </div>
 </nav>
 
+<div id='userapp'>
+  <form method= "get" v-on:submit.prevent="fetchUser">
+    <p> Name: {{userName}}</p>
+    <p> Email: <a href="mailto:norman.osbourne@gmail.com"> {{userEmail}}</a> </p>
+    <p> Country: {{userCountry}} </p>
+    <p> Birthdate: {{userBirthdate}} </p>
+    <p> Age: {{userAge}} </p>
+    <a v-bind:src="userPicLarge">
+      <img v-bind:src="userPicThumb">
+    </a>
+    <div>
+      <p><button type="submit"> Refresh </button></p>
+  </form>
+</div>
+
+
+
+
+
+
+
+
 <h1> Green Goblin  </h1> <!-- https://www.digitalspy.com/movies/a32169709/spider-man-willem-dafoe-doc-ock-deleted-scene/ -->
 <a href= "images/willem-dafoe-spider-man-green-goblin.jpg" >
 <img src="images/willem-dafoe-spider-man-green-goblin.jpg" alt="Green Goblin" class="img-thumbnail" width="200">
@@ -57,7 +79,7 @@
   <p>Place of Birth: Appleton, WI </p>
   <p> Date of Birth: July 22, 1955 </p>
   <p> Full Name: Norman Osborne </p>
-  <p> <a href="mailto:willem@greengoblin.com">Send Email</a> </p>
+  <p> <a href="mailto:willem@greengoblin.com">Send Email </a> </p>
   
  <br>
   <p><q>Sorry I'm late. Work was murder</q></p>  
@@ -66,7 +88,16 @@
   <hr>
     
     <footer>
+
+
+
+      <br>
       <a href="index.html" > Home Page | </a>  <a href="second_page.html" > Books | </a>  <a href="thrid_page.html" > Battle of the Greenies </a>
         </footer>
+
+
+       <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+       <script src="js/user.js"></script>
+        
 </body>
 </html>
