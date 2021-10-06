@@ -15,6 +15,17 @@ var app = new Vue({
         },
 
         methods: {
+            selectStudent(s) {
+                console.log("Clicked", s);
+                if(this.selectedStudent == s) {
+                    return;
+                }
+
+
+                this.selectedStudent = s;
+                this.offers = [];
+                this.fetchOfferData(s);
+            }
             fetchStudent: function() {
                 fetch('/api/student/')
                 .then(response => response.json())
