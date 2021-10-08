@@ -25,7 +25,7 @@ var app = new Vue({
                 this.selectedStudent = s;
                 this.offers = [];
                 this.fetchOfferData(s);
-            }
+            },
             fetchStudent: function() {
                 fetch('/api/student/')
                 .then(response => response.json())
