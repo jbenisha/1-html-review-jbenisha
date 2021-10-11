@@ -1,4 +1,4 @@
-const SomeApp = {
+const BookList = {
     data() {
       return {
         books: [],
@@ -10,7 +10,7 @@ const SomeApp = {
             .then( response => response.json() )
             .then( (responseJson) => {
                 console.log(responseJson);
-                this.students = responseJson;
+                this.books = responseJson;
             })
             .catch( (err) => {
                 console.error(err);
@@ -23,4 +23,4 @@ const SomeApp = {
   
   }
   
-  Vue.createApp(SomeApp).mount('#booklist');
+  Vue.createApp(BookList).mount('#booklist');
