@@ -89,6 +89,30 @@
 
 </div>
 
+<form v-on:submit.prevent="postNewOffer">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCompany">Company Name</label>
+      <input type="text" v-model="offerForm.Company" class="form-control" id="inputCompany" placeholder="Company">
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputSalary">Salary</label>
+        <input type="number" v-model="offerForm.Salary" class="form-control" id="inputSalary" placeholder="Salary">
+      </div>
+  <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputBonus">Bonus</label>
+          <input type="number" v-model="offerForm.Bonus" class="form-control" id="inputBonus" placeholder="Bonus">
+        </div>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+            <label for="Date">offerDate</label>
+            <input type="date" v-model="offerForm.Date" class="form-control" id="inputDate" placeholder="Date">
+          </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
 
 <!--<div id='userapp'>
   <form method= "get" v-on:submit.prevent="fetchUser">
