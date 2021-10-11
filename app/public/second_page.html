@@ -35,11 +35,12 @@
 
 
 <!--Change for books table-->
-<div id="booklist" class="container">
-  <div>
+<div id="booklist" class="container"></div>
+
     <table id="booktable" class="row table table-striped table-hover table-condensed">
       <thead>
         <tr>
+          <th>ID</th>
           <th>TITLE</th>
           <th>AUTHOR</th>
           <th>YEAR PUBLISHED</th>
@@ -50,13 +51,13 @@
       </thead>
       <tbody>
         <tr v-for="book in books">
-          <td>{{ book.id }}</td>
-          <td>{{ book.Title }}</td>
-          <td>{{ book.Author }}</td>
-          <td>{{ book.Year_Published }}</td>
-          <td>{{ book.Publisher }}</td>
-          <td>{{ book.Page_Count }}</td>
-          <td>{{ book.MSRP }}</td>
+          <td>{{ books.id }}</td>
+          <td>{{ books.Title }}</td>
+          <td>{{ books.Author }}</td>
+          <td>{{ books.Year_Published }}</td>
+          <td>{{ books.Publisher }}</td>
+          <td>{{ books.Page_Count }}</td>
+          <td>{{ books.MSRP }}</td>
         </tr>
       </tbody>
     </table>
