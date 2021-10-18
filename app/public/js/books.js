@@ -1,10 +1,10 @@
 const BookList = {
     data() {
       return {
-        books: [],
-      }
+        books: []
+        }
     },
-    
+    methods:{
         fetchBooksData() {
             fetch('/api/books/')
             .then( response => response.json() )
@@ -16,11 +16,12 @@ const BookList = {
                 console.error(err);
             })
         },
-        
+    },
     created() {
+    
         this.fetchBooksData();
     }
+    
+}
   
-  }
-  
-  Vue.createApp(BookList).mount('#booklist');
+  Vue.createApp(BookList).mount('#bookList');
