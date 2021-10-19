@@ -51,7 +51,6 @@
       </thead>
       <tbody>
         <tr v-for="book in books">
-          <td>{{ book.id }}</td>
           <td>{{ book.Title }}</td>
           <td>{{ book.Author }}</td>
           <td>{{ book.Year_Published }}</td>
@@ -61,171 +60,48 @@
         </tr>
       </tbody>
     </table>
+ 
+  <div class="row">
+    <div>
+
+      <form v-on:submit.prevent="postNewBook">
+        <div class="mb-3">
+          <label for="Title" class="form-label">Title</label>
+          <input type="text" v-model="bookForm.Title"
+           class="form-control" id="Title">
+        </div>
+        <div class="mb-3">
+          <label for="Author" class="form-label">Author</label>
+          <input type="text" v-model="bookForm.Author" class="form-control" id="Author">
+        </div>
+        <div class="mb-3">
+          <label for="Year_Published" class="form-label">Year_Published</label>
+          <input type="number" v-model="bookForm.Year_Published" class="form-control" id="Year_Published">
+        </div>
+        <div class="mb-3">
+          <label for="Publisher" class="form-label">Publisher</label>
+          <input type="text" v-model="bookForm.Publisher" class="form-control" id="Publisher">
+        </div>
+        <div class="mb-3">
+          <label for="Page_Count" class="form-label">Page_Count</label>
+          <input type="number" v-model="bookForm.Page_Count" class="form-control" id="Page_Count">
+        </div>
+        <div class="mb-3">
+          <label for="MSRP" class="form-label">MSRP</label>
+          <input type="number" v-model="bookForm.MSRP" class="form-control" id="MSRP">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+        
+    </div>
+
+
   </div>
-<div class="row">
-  <div>
-
-    <form action="confirmation.html" method="post">
-      Book Title <input type="text">
-      Author <input type="text">
-      Year Published <input type="number">
-      Publisher <input type="text">
-      Page Count <input type="number">
-      MSRP <input type="number">
+</div><br>
 
 
-<button type="submit" class="btn btn-primary"> Submit</button>
-
-    </form>
-  </div>
-
-
-</div>
-
-
-
-</div>
-
-<!--End-->
-
-
-
-<!--
-<h1> Books Webpage </h1>
-    
-<h2>The Books</h2>
-
-<table id="taskTable">
-  <thead>
-  <tr>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Year Published</th>
-    <th>Publisher</th>
-    <th>Page Count</th>
-    <th>MSRP</th>
-    
-  </tr>
-</thead>
-<tbody>  
-<tr>
-    <td>The Adventures of Captain Underpants</td>
-    <td>Dav Pilkey</td>
-    <td>1997</td>
-    <td>Scholastic</td>
-    <td>125</td>
-    <td>$6.99</td>
-    
-  </tr>
-  <tr>
-    <td>Captain Underpants and the Attack of the Talking Toilets </td>
-    <td>Dav Pilkey</td>
-    <td>1999</td>
-    <td>Scholastic</td>
-    <td>144</td>
-    <td>$6.99</td>
-    
-  </tr>
-  <tr>
-    <td>Captain Underpants and the Invasion of the Incredibly Naughty Cafeteria Ladies from Outer Space</td>
-    <td>Dav Pilkey</td>
-    <td>1999</td>
-    <td>Scholastic</td>
-    <td>144</td>
-    <td>$6.99</td>
-    
-  </tr>
-  <tr>
-    <td>Captain Underpants and the Perilous Plot of Professor Poopypants </td>
-    <td>Dav Pilkey</td>
-    <td>2000</td>
-    <td>Scholastic</td>
-    <td>160</td>
-    <td>$5.00</td>
-    
-  </tr>
-  <tr>
-    <td>Captain Underpants and the Wrath of the Wicked Wedgie Woman </td>
-    <td>Dav Pilkey</td>
-    <td>2001</td>
-    <td>Scholastic</td>
-    <td>160</td>
-    <td>$6.99</td>
-    
-  </tr>
-  <tr>
-    <td>Captain Underpants and the Big, Bad Battle of the Bionic Booger Boy, Part 1: The Night of the Nasty Nostril Nuggets </td>
-    <td>Dav Pilkey</td>
-    <td>2003</td>
-    <td>Scholastic</td>
-    <td>176</td><td>$5.99</td>
-  </tr>
-  <tr>
-    <td>Captain Underpants and the Big, Bad Battle of the Bionic Booger Boy, Part 2: The Revenge of the Ridiculous Robo-Boogers </td>
-    <td>Dav Pilkey</td>
-    <td>2003</td>
-    <td>Scholastic</td>
-    <td>176</td>
-    <td>$9.99</td>
-  </tr>
-</tbody>
-</table>
-    
-  <p>
-      
-      
-      <br>
-  
-      <h3>Add Row</h3>
-<table>
-
-  <tr>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Year Published</th>
-    <th>Publisher</th>
-    <th>Page Count</th>
-    <th>MSRP</th>
-  </tr>
-  <tr>
-    <td><form> 
-      <label for="">
-      </label>  
-      <input type=" " class= "" id="" placeholder="">
-      </form></td>
-    <td><form> 
-      <label for="">
-      </label>  
-      <input type=" " class= "" id="" placeholder="">
-      </form></td>
-    <td><form> 
-      <label for="">
-      </label>  
-      <input type=" " class= "" id="" placeholder="">
-      </form></td>
-    <td><form> 
-      <label for="">
-      </label>  
-      <input type=" " class= "" id="" placeholder="">
-      </form></td>
-    <td><form> 
-      <label for="">
-      </label>  
-      <input type=" " class= "" id="" placeholder="">
-      </form></td>
-    <td><form> 
-      <label for="">
-      </label>  
-      <input type=" " class= "" id="" placeholder="">
-      </form></td>
-  </tr>
-
-
-</table>
-<input class="button" type="submit" name="submit" id="submit" value="Submit" onclick="myFunction()"> 
--->
-      <br>
-      <script src="js/books.js"></script>
+  <script src="js/books.js"></script>
   <script src="js/tablesort.min.js"></script>
   <script>
     new Tablesort(document.getElementById('taskTable'));
