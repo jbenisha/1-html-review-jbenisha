@@ -74,6 +74,9 @@ const SomeApp = {
             });
         }
     },
+
+
+    
     created() {
         this.fetchStudentData();
     }

@@ -34,7 +34,7 @@ $stmt = $db->prepare(
   'UPDATE books SET 
     Title = ?,
     Author = ?,
-    Year_Finished = ?,
+    Year_Published = ?,
     Publisher = ?,
     Page_Count = ?,
     MSRP = ?
@@ -47,7 +47,8 @@ $stmt->execute([
     $_POST['Year_Published'],
     $_POST['Publisher'],
     $_POST['Page_Count'],
-    $_POST['MSRP']
+    $_POST['MSRP'],
+    $_POST['id']
 ]);
 
 // Get auto-generated PK from DB
